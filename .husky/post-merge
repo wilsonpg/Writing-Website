@@ -1,0 +1,17 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# regex supports mono-repos with a package.json at root-level and at package-level
+PACKAGE_DOT_JSON_REGEX="(^packages\/.*\/package\.json)|(^package\.json)"
+echo ""
+echo "Running bash post-merge hook..."
+if [[ "$(git diff --name-only HEAD@{1} HEAD | grep -E "$PACKAGE_DOT_JSON_REGEX")" ]]; then
+  # extract all paths to package.json files
+  PACKAGES="$(git diff --name-only HEAD@{1} HEAD | grep -E "$PACKAGE_DOT_JSON_REGEX")"
+  for package in $PACKAGES; do
+    echo "📦 $package was changed!"
+  done
+  echo "A package was changed, running npm install..."
+  eval "npm install"
+else
+  echo "No package.json changes, no reason for npm install..."
+fi

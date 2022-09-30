@@ -1,0 +1,28 @@
+{
+  "editor.rulers": [
+    120
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "eslint.options": {
+    "rulePaths": [
+      "node_modules/gatsby/dist/utils/eslint-rules"
+    ]
+  },
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "css.validate": false,
+  "scss.validate": false,
+  "cSpell.words": [
+    "stylelint"
+  ]
+}
