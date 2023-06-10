@@ -3,9 +3,23 @@
   "moderate": true,
   "package-manager": "npm",
   "allowlist": [
+    "GHSA-c2jc-4fpr-4vhg",
+    "GHSA-w573-4hg7-7wgq",
+    "GHSA-q9mw-68c2-j6m5",
     "GHSA-ww39-953v-wcq6",
     "GHSA-pfrx-2q88-qq97",
-    "GHSA-w5p7-h5w8-2hfq"
+    "GHSA-rc47-6667-2j5j",
+    "GHSA-9c47-m6qq-7p4h",
+    "GHSA-76p3-8jx3-jpfq",
+    "GHSA-hhq3-ff78-jv3g",
+    "GHSA-3rfm-jhwj-7488",
+    "GHSA-f8q6-p94x-37v3",
+    "GHSA-p8p7-x288-28g6",
+    "GHSA-w5p7-h5w8-2hfq",
+    "GHSA-fhg7-m89q-25r3",
+    "GHSA-353f-5xf4-qw67",
+    "GHSA-hc6q-2mpp-qw7j",
+    "GHSA-f9xv-q969-pqx4"
   ],
   "report-type": "summary"
 }

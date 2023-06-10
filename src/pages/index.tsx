@@ -1,9 +1,11 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
+import "bootstrap/dist/css/bootstrap.css";
 
 const pageStyles = {
   backgroundColor: `black`,
-  padding: 96,
+  color: `white`,
+  height: `100vh`,
   fontFamily: `-apple-system, Roboto, sans-serif, serif`,
 };
 
@@ -16,5 +18,5 @@ export default App;
 
 export const Head: HeadFC = () =>
   <title>
-    Paul Wilson
+    React App
   </title>;
