@@ -5,5 +5,7 @@
   "packageFile": "{packages/*/,}package.json",
   "packageManager": "npm",
   "target": "minor",
-  "reject": []
+  "reject": [
+    "typescript"
+  ]
 }
